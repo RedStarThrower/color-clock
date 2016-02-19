@@ -25,10 +25,10 @@ clockContainer.innerHTML = time
 var overlayEl = $("#overlay") 
 var backgroundColor = "#a43e78"
 overlayEl.style.background = backgroundColor
-
+var backgroundNums = backgroundColor[1] + backgroundColor[2] + ":" + backgroundColor[3] + backgroundColor[4]+ ":" + backgroundColor[5] + backgroundColor[6]
 
 var hexContainer = document.querySelector("#hex-container")
-hexContainer.innerHTML = backgroundColor
+hexContainer.innerHTML = backgroundNums
 
 var clockState = {
   showing: true
