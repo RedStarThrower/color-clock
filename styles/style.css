@@ -5,3 +5,48 @@
 body {
 	font-size: 0;
 }
+
+#main-container {
+	max-width: 100%;
+	height: 500px;
+	background: radial-gradient(circle,#d1d243,#0D4B1B);
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+#clock-container {
+	width: 30%;
+	height: 20%;
+	font-size: 100px;
+	color: black;
+	text-align: center;
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+#hex-container {
+	width: 30%;
+	height: 20%;
+	font-size: 100px;
+	color: black;
+	text-align: center;
+	opacity: 0;
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
