@@ -1,3 +1,8 @@
+var $ = function(sel) {
+  return document.querySelector(sel)
+}
+
+
 var mainContainer = document.querySelector("#main-container")
 
 //Clock
@@ -16,36 +21,15 @@ clockContainer.innerHTML = time
 
 //Hex Colors
 
+
+var overlayEl = $("#overlay") 
+var backgroundColor = "#a43e78"
+overlayEl.style.background = backgroundColor
+
+
 var hexContainer = document.querySelector("#hex-container")
-hexContainer.innerHTML = "13:75:27"
+hexContainer.innerHTML = backgroundColor
 
 var clockState = {
   showing: true
 }
-
-var showHex = function() {
-  if (clockState.showing) {
-    clockContainer.style.opacity = 0
-    hexContainer.style.opacity = 1
-    clockState.showing = false
-  }
-  else {
-    clockContainer.style.opacity = 1
-    clockState.showing = true
-  }
-}
-
-var hideHex = function() {
-  if (clockState.showing === false) {
-    clockContainer.style.opacity = 1
-    hexContainer.style.opacity = 0
-    clockState.showing = true
-  }
-  else {
-    clockContainer.style.opacity = 0
-    clockState.showing = false
-  }
-}
-
-clockContainer.addEventListener("mouseover", showHex)
-clockContainer.addEventListener("mouseout", hideHex)
