@@ -32,7 +32,7 @@ body {
 #clock-container {
 	width: 30%;
 	height: 20%;
-	font-size: 80px;
+	font-size: 100px;
 	color: black;
 	text-align: center;
 	
@@ -59,7 +59,7 @@ body {
 #hex-container {
 	width: 30%;
 	height: 20%;
-	font-size: 80px;
+	font-size: 100px;
 	color: black;
 	text-align: center;
 	opacity: 0;

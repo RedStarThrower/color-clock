@@ -32,13 +32,13 @@ var displayHex = function(){
 	else {
 		redRgb = 0
 	}
-	if (greenRgb < 245) {
+	if (greenRgb < 235) {
 		greenRgb +=  20
 	}
 	else {
 		greenRgb = 0
 	}
-	if (blueRgb < 245) {
+	if (blueRgb < 240) {
 		blueRgb += 15
 	}
 	else {
